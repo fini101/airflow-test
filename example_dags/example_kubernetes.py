@@ -48,7 +48,7 @@ with DAG(
     ]
 
     k = KubernetesPodOperator(
-        namespace='airflow_test',
+        namespace='argocd',
         image="ubuntu:16.04",
         cmds=["bash", "-cx"],
         arguments=["echo hello here"],
